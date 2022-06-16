@@ -12,11 +12,12 @@
 #     return res
 
 class Villager:
-    def __init__(self, _hp, _attack, _stamina, _name):
-        self._hp = 100
-        self._attack = 5
-        self._stamina = 100
-        self._name = "john"
+    def __init__(self, _hp=100, _attack=5, _stamina=100, _name="John Doe"):
+        self._hp = _hp
+        self._attack = _attack
+        self._stamina = _stamina
+        self._name = _name
+
 
 if __name__ == '__main__':
     # i = 0
@@ -34,16 +35,16 @@ if __name__ == '__main__':
     #     else:
     #         print(i)
     #         i += 1
+
     # data = ['4', '3', '-2']
     # res = calculate(data)
     # print(res)
 
     # from random import seed
     # from random import randint
-    # # seed random number generator
     # seed(1)
-    # # generate some integers
-    # for _ in range(10):
+    # for _ in range(100):
 	#     value = randint(0, 100)
 	#     print(value)
+
     print(Villager._name)
