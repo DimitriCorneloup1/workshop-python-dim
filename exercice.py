@@ -18,6 +18,21 @@ class Villager:
         self._stamina = _stamina
         self._name = _name
 
+    def attack():
+        self.stemina -= 10
+
+    def rest():
+        self.stamina = 100
+        if (self.stemina >= 100):
+            self.stemina = 100 
+
+    def damage(hp_damage):
+         self._hp -= hp_damage 
+         if (self._hp <= 0):
+             print("i am dead!")
+
+    def speak():
+        print("Hello my name is {name}!")
 
 if __name__ == '__main__':
     # i = 0
